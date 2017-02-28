@@ -8,7 +8,7 @@ $(document).ready(function() {
             success: function(data)     {         //data - response from server
             if (data.success == true) {
             }
-            else{
+            else if (data.success == false){
               alert("틀린 암호이거나 잘못된 접근입니다.");
             }
         },
