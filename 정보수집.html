@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+</head>
+
+<body>
+  <form class="form-horizontal center-block">
+    <legend>회원등록</legend>
+    <div class="form-group">
+      <label class="col-md-4 col-sm-6 col-xs-6 control-label">USERNAME</label>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <input type="text" class="form-control" id="reg_username" placeholder="USERNAME">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 col-sm-6 col-xs-6 control-label">ID</label>
+      <div class="col-md-4 col-xs-12 col-sm-12" id="cid">
+        <input type="text" class="form-control" id="reg_id" placeholder="ID">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 col-sm-6 col-xs-6 control-label">PW</label>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <input type="password" class="form-control" id="reg_pw" placeholder="PW">
+      </div>
+    </div>
+    <div class="form-group" id="rpw">
+      <label class="col-md-4 col-sm-6 col-xs-6 control-label">PW (재입력)</label>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+        <input type="password" class="form-control" id="reg_rpw" placeholder="PW (재입력)">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="col-md-4 col-sm-6 col-xs-6 control-label">등록</label>
+      <div class="col-md-4 col-xs-12 col-sm-12">
+      <input type="button" id="subt" class="form-control" value="register">
+    </div>
+    </div>
+</form>
+    <script src="http://code.jquery.com/jquery-1.12.1.js"></script>
+    <script src="정보수집.js"></script>
+</body>
+
+</html>
