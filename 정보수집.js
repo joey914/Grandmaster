@@ -1,19 +1,20 @@
 $(document).ready(function() {
     $('#subt').click(function() {
         alert("clicked. ajax실행합니다.");
-        var userid = $("#reg_id").val();
-        var userpw = $("#reg_pw").val();
-        var userrpw = $("#reg_rpw").val();
-        var username = $("#reg_username").val();
+        var name = $("#name").val();
+        var kt = $("#kt").val();
+        var pn = $("#pn").val();
+        var email = $("#email").val();
+        var nsc = $("#nsc").val();
+        var wsc = $("#wsc").val();
+        var btg = $("#bt").val();
+        alert(name + kt + pn + email + nsc + wsc + btg);
 
-        if (userpw != userrpw) {
-            $("#rpw").addClass('has-error');
-        }
-        else {
-            var regdata = "username="+username+"&id=" + userid + "&password=" + userpw;
+
+            var regdata = "name=" + name + "&kakaotalk=" + kt + "&Phonenum=" + pn +"&email=" + email + "&Wantscore=" + wsc +"&Nowscore=" + nsc + "&battletag=" + btg;
             $.ajax({        
                 type: "POST",
-                url: "http://58.78.248.164:3000/register",
+                url: "http://soylatte.kr:3000/bill",
                     data: regdata,
                     success: function(data)     {         //data - response from server
                     if (data.success == true) {
@@ -24,6 +25,5 @@ $(document).ready(function() {
                     alert("서버에 오류생겼다 bro; jqXHR : " + xhr + " status : " + status + " error : " + error);
                 }
             });
-        }
     })
 });
