@@ -5,12 +5,8 @@ $(document).ready(function() {
         type: "POST",
         url: "http://soylatte.kr:3000/login",
             data: regdata,
-            success: function(data)     {         //data - response from server
-            if (data.success == true) {
-            }
-            else if (data.success == false){
-              alert("틀린 암호이거나 잘못된 접근입니다.");
-            }
+            success: function(data)     { 
+          
         },
             error: function(xhr, status, error)     {
             alert("서버에 문제가 있습니다. 관리자에게 문의하세요");
