@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $('#login').click(function() {
-    var regdata = "pw="+$("#inputPassword").val();
+    var regdata = "password="+$("#inputPassword").val();
     $.ajax({        
         type: "POST",
         url: "http://soylatte.kr:3000/login",
